@@ -3,6 +3,7 @@
 Project for automating and configuring a security infrastructure based on **Wazuh**, managed via **Ansible**. The project documents the creation of a secure environment, handling system issues, and proactive monitoring.
 
 Project Goal
+
 The goal is the automated deployment of a Wazuh agent on a target machine (Web), tackling connectivity challenges, cryptographic authentication (GPG/SSH), and system resource management.
 
 Technologies Used
