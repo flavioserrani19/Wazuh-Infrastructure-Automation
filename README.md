@@ -1,50 +1,24 @@
-\# Wazuh-Infrastructure-Automation
+# Wazuh Infrastructure Automation
 
+Project for automating and configuring a security infrastructure based on **Wazuh**, managed via **Ansible**. The project documents the creation of a secure environment, handling system issues, and proactive monitoring.
 
+Project Goal
+The goal is the automated deployment of a Wazuh agent on a target machine (Web), tackling connectivity challenges, cryptographic authentication (GPG/SSH), and system resource management.
 
-Progetto di automazione e configurazione di un'infrastruttura di sicurezza basata su \*\*Wazuh\*\*, gestita tramite \*\*Ansible\*\*. Il progetto documenta la creazione di un ambiente sicuro, la gestione delle criticità di sistema e il monitoraggio proattivo.
+Technologies Used
+- **Wazuh**: SIEM/XDR for security.
+- **Ansible**: Configuration automation.
+- **SSH/GPG**: Management of security and package authenticity.
+- **Linux (Debian/Ubuntu)**: Reference operating system.
 
+Workflow and Troubleshooting
+The documentation follows the project lifecycle, from initial setup to anomaly resolution:
 
+1. **SSH Configuration**: Creating the secure channel between Manager and Agent
+2. **Automation**: Deployment via Ansible.
+3. **Issue Management**: - Fixing GPG error (`NO_PUBKEY`). - Handling storage saturation on `/var`.
+4. **Validation**: Monitoring system logs and detecting threats via *Rootcheck*.
+  
+Conclusions
 
-\## Obiettivo del Progetto
-
-L'obiettivo è la distribuzione automatizzata di un agente Wazuh su una macchina target (Web), risolvendo le sfide di connettività, autenticazione crittografica (GPG/SSH) e gestione delle risorse di sistema.
-
-
-
-\## Tecnologie Utilizzate
-
-\- \*\*Wazuh\*\*: SIEM/XDR per la sicurezza.
-
-\- \*\*Ansible\*\*: Automazione della configurazione.
-
-\- \*\*SSH/GPG\*\*: Gestione della sicurezza e dell'autenticità dei pacchetti.
-
-\- \*\*Linux (Debian/Ubuntu)\*\*: Sistema operativo di riferimento.
-
-
-
-\## Workflow e Troubleshooting
-
-La documentazione segue il ciclo di vita del progetto, dalla configurazione iniziale alla risoluzione delle anomalie:
-
-
-
-1\. \*\*Configurazione SSH\*\*: Creazione del canale sicuro tra Manager e Agente.
-
-2\. \*\*Automazione\*\*: Distribuzione via Ansible.
-
-3\. \*\*Gestione Criticità\*\*:
-
-&#x20;  - Risoluzione errore GPG (`NO\_PUBKEY`).
-
-&#x20;  - Gestione saturazione storage su `/var`.
-
-4\. \*\*Validazione\*\*: Monitoraggio log di sistema e intercettazione minacce via \*Rootcheck\*.
-
-
-
-\## Conclusioni
-
-Il progetto ha dimostrato la capacità di gestire un ambiente di sicurezza reale, trasformando errori bloccanti in opportunità di hardening del sistema. Il sistema è ora in grado di rilevare attivamente anomalie (Rootcheck) e tentativi di manomissione, confermando l'integrità dell'infrastruttura.
-
+   The project showed the ability to manage a real security environment, turning blocking errors into opportunities to harden the system. The system can now actively detect anomalies (Rootcheck) and tampering attempts, confirming the integrity of the infrastructure.
